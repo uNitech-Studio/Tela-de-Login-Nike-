@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo-container">
+            <img src="img/tenis1.png" alt="Logo" class="logo" id="logo">
+        </div>
+      
+        <form id="login-form">
+            <div class="form-group">
+                <label for="username">Usuário</label>
+                <input type="text" id="username" name="username">
+                <div class="error" id="username-error"></div>
+            </div>
+            <div class="form-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password">
+                <div class="error" id="password-error"></div>
+            </div>
+            <button type="submit">Entrar</button>
+            <div id="message"></div>
+        </form>
+        <div class="separator">ou</div>
+        <button class="google-button" id="google-login">
+            <img src="img/google-logo.png" alt="Google Logo" class="google-logo">
+            Continuar com o Google
+        </button>
+        <p class="create-account-text">
+            Ainda não possui conta? <a href="register.html">Criar uma conta</a>
+        </p>
+        <p class="policy-text">
+            Ao continuar, afirmo que concordo com a <a href="https://www.nike.com/privacy-policy" target="_blank">Política de privacidade</a> e os <a href="https://www.nike.com/terms-of-use" target="_blank">Termos de uso</a> da Nike.
+        </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
